@@ -15,6 +15,7 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 /* reset */
 
 body {
@@ -51,11 +52,7 @@ h1, h2, h3, h4, h5, h6, p{
     display: flex;
     align-items: center;
     position: relative;
-    max-width: 320px;
-    padding-left: 14px;
-    padding-right: 16px;
-    padding-top: 36px;
-    margin: 0 auto;
+    margin:36px 14px 0 14px;
 }
 .h1, .h1-modal{
     color: #000;
@@ -67,22 +64,26 @@ h1, h2, h3, h4, h5, h6, p{
 span{
     color: var(--text-color2);
 }
-.burger{
+.modal-open{
     position: absolute;
-    right: 16px;
-    top: 46px;
+    right: 15px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+}
+.burger{
     background-color: transparent;
     border: transparent;
 }
 .nav{
     display: none;
+    margin: 0 auto;
 }
 .nav-menu{
     display: flex;
     align-items: center;
     gap: 31px;
-    margin-left: 167px;
-    margin-right: 100px;
 }
 .nav-item-a, .nav-item-modal-a{
     font-weight: 500;
@@ -162,20 +163,54 @@ border-radius: 10px;
     margin-left:15px;
 }
 
+/* 1 section */
 
+
+.hero-h1 {
+    width: 220px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.hero-p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #8F95A5;
+    margin: 20px 15px 51px 15px;
+    width: 100%;
+}
+.hero-btn {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 18px 100px;
+    margin: 0 15px;
+
+    color: #ffffff;
+    background: #263238;
+    border-radius: 5px;
+
+    display: block;
+    text-align: center;
+    
+}
+.hero-img{
+    margin: 0 auto;
+    display: block;
+}
 
 /* media */
 
 @media screen and (min-width: 575px){
     .header-cont{
-        max-width: 575px;
-        padding: 39px 50px 0 32px ;
+        margin: 39px  32px 0 50px;
     }
     .modal-open {
-        top: 50px;
-        right: 50px;
         border: none;
-        
     }
     .h1{
         font-size: 30px;
@@ -207,6 +242,26 @@ border-radius: 10px;
         font-size: 24px;
         line-height: 65px;
     }
+/* hero */
+
+    
+    .hero-h1{
+        font-size: 34px;
+        line-height: 45px;
+        width: 491px;
+    }
+    .hero-p {
+        font-size: 16px;
+        line-height: 24px;
+        width: 486px;
+        margin: 26px auto 61px;
+    }
+    .hero-btn{
+        font-size: 18px;
+        line-height: 27px;
+        padding: 24px 101px;
+        margin:0 135px;
+    }
 
 
 
@@ -214,12 +269,7 @@ border-radius: 10px;
 }
 @media screen and (min-width: 768px){
     .header-cont{
-        max-width: 768px;
-        padding: 39px 39px 0 39px ;
-    }
-    .modal-open {
-        top: 53px;
-        right: 39px;
+        margin: 39px  39px 0 39px;
     }
     .h1-modal{
         padding: 39px 0 21px 39px;
@@ -241,23 +291,80 @@ border-radius: 10px;
         font-size: 22px;
         line-height: 60px;
     }
+    /* hero */
+    .hero-h1{
+        text-align: start;
+        font-size: 36px;
+        line-height: 45px;
+        width: 217px;
+        margin: 0;
+    }
+    .hero-p {
+        text-align:start;
+        font-size: 16px;
+        line-height: 24px;
+        width: 338px;
+        margin: 25px 0px 51px 0;
+    }
+    .hero-btn{
+        font-size: 18px;
+        line-height: 27px;
+        padding: 19px 57px;
+        margin: 0;
+    }
+    .hero-cont{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        margin: 68px 17px 0 39px;
+        justify-content: space-between;
+    }
 }
 @media screen and (min-width: 992px){
     .header-cont{
-        max-width: 992px;
-        padding: 25px 31px 0 31px ;
+        margin: 30px 31px 0 31px;
     }
     .modal-open {
         display: none;
     }
+    .h1{
+        position: absolute;
+    }
     .nav{
         display:flex;
+        justify-content: center;
+    }
+    .nav-btn{
+        position: absolute;
+        right: 31px;
     }
     .burger {
         width: 30px;
         height: 17px;
     }
-    
+        /* hero */
+    .hero-h1{
+        text-align: start;
+        font-size: 48px;
+        line-height: 64px;
+        width: 290px;
+    }
+    .hero-p {
+        text-align:start;
+        font-size: 20px;
+        line-height: 30px;
+        width: 421px;
+        margin: 27px 0px 55px;
+    }
+    .hero-btn{
+        font-size: 24px;
+        line-height: 36px;
+        padding: 22px 78px;
+        margin-top: 0;
+    }
+    .hero-cont{
+        margin: 81px 21px 0 29px;
+    }
     
 }
 @media screen and (min-width: 993px){
@@ -266,17 +373,18 @@ border-radius: 10px;
     }
 }
 @media screen and (min-width: 1600px){
+
     .header-cont{
-        max-width: 1600px;
-        padding: 55px 131px 0 131px ;
+        margin: 55px 131px 0 131px;
     }
     .nav-menu {
         gap: 50px;
-        margin-left: 236px;
-        margin-right: 121px;
+        justify-content: center;
     }
     .nav-btn {
-        display: block;
+        position: absolute;
+        top: -20px;
+        right: -20px;
         width: 312px;
         height: 70px;
         padding: 20px 56px;
@@ -285,9 +393,34 @@ border-radius: 10px;
     }
     .h1{
         font-size: 36px;
+        position: absolute;
     }
     .nav-item-a {
         font-size: 20px;
+    }
+/* hero */
+    .hero-h1{
+        text-align: start;
+        font-size: 64px;
+        line-height: 80px;
+        width: 386px;
+    }
+    .hero-p {
+        text-align:start;
+        font-size: 24px;
+        line-height: 36px;
+        width: 540px;
+        margin: 40px 0 83px 0;
+    }
+    .hero-btn{
+        font-size: 36px;
+        line-height: 54px;
+        padding: 23px 103px;
+        margin: 0;
+        
+    }
+    .hero-cont{
+        margin: 63px 131px 0 131px;
     }
 }
 

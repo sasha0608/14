@@ -16,7 +16,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header-cont">
+    <header class="header-cont container">
       <a class="h1">Bri<span>lex</span></a>
       <button class="modal-open" data-modal-open>
         <svg class="burger" width="34px" height="19px">
@@ -26,7 +26,9 @@
 
       <nav class="nav">
         <ul class="nav-menu">
-          <li class="nav-item"><a class="link nav-item-a" href="">Home</a></li>
+          <li class="nav-item">
+            <a class="link nav-item-a" href="">Home</a>
+          </li>
           <li class="nav-item">
             <a class="link nav-item-a" href="">Skills</a>
           </li>
@@ -76,6 +78,142 @@
       </div>
     </div>
 
+    <!-- MAIN -->
+    <main>
+
+<!-- 1 section -->
+      <section class="hero">
+        <div class="hero-cont">
+          <div>
+            <picture>
+              <!-- img320  -->
+                        <source
+                          srcset="
+                          ./images/img320/1sec_1x-mob1.webp 1x,
+                          ./images/img320/1sec_2x-mob1.webp 2x,
+                          ./images/img320/1sec_3x-mob1.webp 3x
+                          "
+                          type="image/webp"
+                          media="(max-width: 320px)"
+                        
+                        />
+                        <source
+                          srcset="
+                          ./images/img320/1sec_1x-mob1.jpg 1x,
+                          ./images/img320/1sec_2x-mob1.jpg 2x,
+                          ./images/img320/1sec_3x-mob1.jpg 3x
+                          "
+                          media="(max-width: 574px)"
+                        />
+                        
+              
+              <!-- img575  -->
+                        <source
+                          srcset="
+                          ./images/img575/1sec_1x-mob.webp 1x,
+                          ./images/img575/1sec_2x-mob.webp 2x,
+                          ./images/img575/1sec_3x-mob.webp 3x
+                          "
+                          type="image/webp"
+                          media="(min-width: 575px) and (max-width:767px)"
+                        />
+                        <source
+                          srcset="
+                          ./images/img575/1sec_1x-mob.jpg 1x,
+                          ./images/img575/1sec_2x-mob.jpg 2x,
+                          ./images/img575/1sec_3x-mob.jpg 3x
+                          "
+                          media="(min-width: 575px) and (max-width:767px)"
+                        />
+                        
+              
+              <!-- img768 -->
+                        <source
+                          srcset="
+                          ./images/img768/1sec_1x-tablet1.webp 1x,
+                          ./images/img768/1sec_2x-tablet1.webp 2x,
+                          ./images/img768/1sec_3x-tablet1.webp 3x
+                          "
+                          type="image/webp"
+                          media="(min-width: 768px) and (max-width:991px)"
+                        />
+                        <source
+                          srcset="
+                          ./images/img768/1sec_1x-tablet1.jpg 1x,
+                          ./images/img768/1sec_2x-tablet1.jpg 2x,
+                          ./images/img768/1sec_3x-tablet1.jpg 3x
+                          "
+                          media="(min-width: 768px) and (max-width:991px)"
+                        />
+                        
+                      
+              <!-- img992  -->
+                        <source
+                          srcset="
+                          ./images/img992/1sec_1x-tablet.webp 1x,
+                          ./images/img992/1sec_2x-tablet.webp 2x,
+                          ./images/img992/1sec_3x-tablet.webp 3x
+                          "
+                          type="image/webp"
+                          media="(min-width: 992px) and (max-width:1599px)"
+                        />
+                        <source
+                          srcset="
+                          ./images/img992/1sec_1x-tablet.jpg 1x,
+                          ./images/img992/1sec_2x-tablet.jpg 2x,
+                          ./images/img992/1sec_3x-tablet.jpg 3x
+                          "
+                          media="(min-width: 992px) and (max-width:1599px)"
+                        />
+                        
+              
+              <!-- img1600  -->
+                        <source
+                        srcset="
+                        ./images/img1600/1sec_1x-desktop.webp 1x,
+                        ./images/img1600/1sec_2x-desktop.webp 2x,
+                        ./images/img1600/1sec_3x-desktop.webp 3x
+                        "
+                        type="image/webp"
+                        media="(min-width: 1600px)"
+                      />
+                      <source
+                        srcset="
+                        ./images/img1600/1sec_1x-desktop.jpg 1x,
+                        ./images/img1600/1sec_2x-desktop.jpg 2x,
+                        ./images/img1600/1sec_3x-desktop.jpg 3x
+                        "
+                        media="(min-width: 1600px)"
+                      />
+                      <img class="hero-img" src="./images/img320/1sec_1x-mob1.jpg" alt="">
+
+          </div>             
+          <div class="hero-div">
+            <h1 class="hero-h1">Learn 
+              Any Foreign
+              Language</h1>
+            <p class="hero-p">With our teachers who write a program for 
+              each student, you will be able to make your
+              first sketch after the first lesson.</p>
+            <a class="link hero-btn" href="">Get started</a>
+          </div>
+
+        </div> 
+      </section>
+<!-- SKILLS -->
+      <section class="skills">
+        <h2 class="skills-h2"></h2>
+        <ul class="skills-ul">
+          <li class="skills-ul-item">
+            <img src="" alt="">
+            <h4 class="skills-ul-item-h4"></h4>
+            <p class="skills-ul-item-p"></p>
+            <a class="skills-ul-item-a" href=""></a>
+          </li>
+        </ul>
+      </section>
+
+    </main>
     <script src="./js.js"></script>
   </body>
 </html>
